@@ -1,6 +1,6 @@
 import type { PageServerLoad } from './$types';
 
-export const load: PageServerLoad = async ({ params, parent, locals }) => {
+export const load: PageServerLoad = async ({ parent }) => {
 	const { num } = await parent();
 
 	return {
